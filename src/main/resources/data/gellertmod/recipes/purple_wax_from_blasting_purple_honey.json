@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "purple_wax",
+  "ingredient": {
+    "item": "gellertmod:purple_honey"
+  },
+  "result": "gellertmod:purple_wax"
+}

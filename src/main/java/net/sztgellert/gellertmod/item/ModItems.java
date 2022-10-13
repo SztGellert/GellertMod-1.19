@@ -20,6 +20,12 @@ public class ModItems {
     public static final RegistryObject<Item> LIT_CANDLE = ITEMS.register("lit_candle",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).durability(3)));
 
+    public static final RegistryObject<Item> PURPLE_WAX = ITEMS.register("purple_wax",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+    public static final RegistryObject<Item> PURPLE_HONEY = ITEMS.register("purple_honey",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

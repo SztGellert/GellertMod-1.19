@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "gellertmod:purple_wax"
+    }
+  },
+  "result": {
+    "item": "gellertmod:candle_block"
+  }
+}

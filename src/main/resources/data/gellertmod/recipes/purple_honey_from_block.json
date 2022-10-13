@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gellertmod:purple_wax"
+    }
+  ],
+  "result": {
+    "item": "gellertmod:purple_honey",
+    "count": 9
+  }
+}
