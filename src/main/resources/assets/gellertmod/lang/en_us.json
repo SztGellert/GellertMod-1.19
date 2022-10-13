@@ -2,5 +2,7 @@
   "item.gellertmod.gemstone": "Gemstone",
   "item.gellertmod.candle": "Candle",
   "item.gellertmod.lit_candle": "Lit Candle",
-  "itemGroup.gellerttab": "Gellert's Mod"
+  "itemGroup.gellerttab": "Gellert's Mod",
+  "block.gellertmod.candle_block": "Block of Candle",
+  "block.gellertmod.experience_block": "Block of Experience"
 }
