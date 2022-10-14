@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sztgellert.gellertmod.GellertMod;
+import net.sztgellert.gellertmod.block.custom.JumpyBlock;
 import net.sztgellert.gellertmod.item.ModCreativeModeTab;
 import net.sztgellert.gellertmod.item.ModItems;
 
@@ -29,6 +30,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> EXPERIENCE_BLOCK = registerBlock("experience_block",
             ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f)
                     .requiresCorrectToolForDrops(), UniformInt.of(3,7)),
+            ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            ()-> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f)
+                    .requiresCorrectToolForDrops()),
             ModCreativeModeTab.TUTORIAL_TAB);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
