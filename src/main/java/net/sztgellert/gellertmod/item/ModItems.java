@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sztgellert.gellertmod.GellertMod;
+import net.sztgellert.gellertmod.item.custom.EightBallItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -25,6 +26,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> PURPLE_HONEY = ITEMS.register("purple_honey",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+    public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball",
+            () -> new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
