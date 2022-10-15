@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -15,6 +16,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.sztgellert.gellertmod.GellertMod;
 import net.sztgellert.gellertmod.block.custom.CandleGlassBlock;
 import net.sztgellert.gellertmod.block.custom.JumpyBlock;
+import net.sztgellert.gellertmod.block.custom.MilletCropBlock;
 import net.sztgellert.gellertmod.item.ModCreativeModeTab;
 import net.sztgellert.gellertmod.item.ModItems;
 
@@ -42,6 +44,9 @@ public class ModBlocks {
             ()-> new CandleGlassBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(CandleGlassBlock.LIT) ? 15 : 0)),
             ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> MILLET_CROP = BLOCKS.register("millet_crop",()-> new MilletCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT))
+    );
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
        RegistryObject<T> toReturn = BLOCKS.register(name, block);

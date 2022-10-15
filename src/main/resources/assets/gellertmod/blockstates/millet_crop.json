@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "age=0": {"model":  "gellertmod:block/millet_stage0"},
+    "age=1": {"model":  "gellertmod:block/millet_stage1"},
+    "age=2": {"model":  "gellertmod:block/millet_stage2"},
+    "age=3": {"model":  "gellertmod:block/millet_stage3"},
+    "age=4": {"model":  "gellertmod:block/millet_stage4"},
+    "age=5": {"model":  "gellertmod:block/millet_stage5"},
+    "age=6": {"model":  "gellertmod:block/millet_stage6"}
+  }
+}
