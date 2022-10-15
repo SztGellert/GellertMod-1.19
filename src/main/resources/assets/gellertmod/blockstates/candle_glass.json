@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "gellertmod:block/candle_glass_on"},
+    "lit=false": { "model": "gellertmod:block/candle_glass_off"}
+  }
+}
